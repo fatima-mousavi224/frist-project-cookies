@@ -21,7 +21,7 @@ export function SweetProvider({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const BASE_URL = "/data/cookies.json";
+  const BASE_URL = "http://localhost:9000/cookie";
 
   useEffect(() => {
     async function FetchCard() {
